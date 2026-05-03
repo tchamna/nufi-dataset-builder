@@ -4,6 +4,8 @@ Standalone toolkit to build the **Nufi–French dictionary dataset** from the so
 
 Forked and packaged from the `dictionary-builder` pipeline in the African Online Dictionaries monorepo.
 
+**Repository:** https://github.com/tchamna/nufi-dataset-builder
+
 ## Install
 
 ```bash
@@ -72,7 +74,7 @@ git init
 git add .
 git commit -m "Initial nufi-dataset-builder package"
 git branch -M main
-git remote add origin https://github.com/YOUR_USER/nufi-dataset-builder.git
+git remote add origin https://github.com/tchamna/nufi-dataset-builder.git
 git push -u origin main
 ```
 
