@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nufi-dataset-builder"
+version = "0.1.0"
+description = "Nufi dictionary: Excel workbook → normalized CSV → SQLite"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Resulam / African Online Dictionaries" }]
+dependencies = [
+    "openpyxl>=3.1",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "python-multipart>=0.0.9",
+]
+
+[project.scripts]
+nufi-dataset = "nufi_dataset_builder.cli:main"
+nufi-dataset-web = "nufi_dataset_builder.web_app:run_web"
+
+[tool.setuptools.packages.find]
+where = ["src"]
